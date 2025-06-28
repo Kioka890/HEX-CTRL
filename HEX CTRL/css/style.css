@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  background: #2E1A34;
+  color: #ECE8F1;
+  font-family: sans-serif;
+}
+.site-header {
+  background: #1a1020;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav button {
+  background: #3B2849;
+  color: #E8C5D9;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+.hero {
+  text-align: center;
+  padding: 3rem;
+  background: #3B2849;
+}
+.btn {
+  background: #E8C5D9;
+  color: #2E1A34;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+.product {
+  background: #3B2849;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 6px;
+}
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.popup-content {
+  background: #3B2849;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+.popup-content .close {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #1a1020;
+  color: #ccc;
+}

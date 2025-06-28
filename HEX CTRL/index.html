@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HEX//CTRL — Command the Unknown</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">HEX//CTRL</div>
+    <nav>
+      <button onclick="filterProducts('all')">Все</button>
+      <button onclick="filterProducts('hoodie')">Толстовки</button>
+      <button onclick="filterProducts('shirt')">Футболки</button>
+      <button onclick="filterProducts('accessory')">Аксессуары</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Command the Unknown</h1>
+    <a href="#shop" class="btn">Shop Now</a>
+  </section>
+
+  <section id="shop" class="products-grid">
+    <div class="product hoodie">
+      <img src="assets/img/hoodie1.jpg" alt="Hoodie">
+      <h3>Dark Hoodie</h3><p>$55</p>
+    </div>
+    <div class="product shirt">
+      <img src="assets/img/shirt1.jpg" alt="Shirt">
+      <h3>Light Shirt</h3><p>$35</p>
+    </div>
+    <div class="product accessory">
+      <img src="assets/img/accessory1.jpg" alt="Accessory">
+      <h3>Patch</h3><p>$15</p>
+    </div>
+  </section>
+
+  <section class="popup" id="popup">
+    <div class="popup-content">
+      <button class="close" onclick="closePopup()">&times;</button>
+      <h2>Subscribe</h2>
+      <form id="subscribe-form">
+        <input type="email" name="user_email" placeholder="Your email" required>
+        <button type="submit" class="btn">Join</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 HEX//CTRL. Command the Unknown.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
